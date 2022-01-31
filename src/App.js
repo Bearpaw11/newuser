@@ -1,9 +1,12 @@
 import NewUserInput from './Components/Users/NewUserInput'
+import UsersList from './Components/Users/UsersList';
+
 
 function App() {
   return (
     <div >
-      <NewUserInput></NewUserInput>
+      <NewUserInput />
+      <UsersList users={[]}/>
     </div>
   );
 }
