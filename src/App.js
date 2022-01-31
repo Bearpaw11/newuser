@@ -1,10 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import NewUserInput from './Components/Users/NewUserInput'
 
 function App() {
   return (
     <div >
-     
+      <NewUserInput></NewUserInput>
     </div>
   );
 }
