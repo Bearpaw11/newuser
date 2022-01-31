@@ -1,5 +1,6 @@
 import Card from "../UI/Card"
 import classes from "./NewUserInput.module.css"
+import Button from "../UI/Button"
 
 const NewUserInput = () => {
 
@@ -14,7 +15,7 @@ const formHandler = event => {
         <input id="username" type="text" />
         <label htmlFor="age">User Age (Years)</label>
         <input id="age" type="number" />
-        <button type="submit">Add New User</button>
+        <Button type="submit">Add User</Button>
       </form>
     </Card>
   )
