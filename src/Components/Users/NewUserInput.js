@@ -1,12 +1,22 @@
+import Card from "../UI/Card"
+import classes from "./NewUserInput.module.css"
+
 const NewUserInput = () => {
+
+const formHandler = event => {
+  event.preventDefault();
+}
+
   return (
-    <form>
-      <label>Username:</label>
-      <input type="text" name="name"/>
-      <label>User Age:</label>
-      <input type="number" name="name" />
-      <button type="submit" value="Submit">Add User</button>
-    </form>
+    <Card className={classes.input}>
+      <form onSubmit={formHandler}>
+        <label htmlFor="username">Username:</label>
+        <input id="username" type="text" />
+        <label htmlFor="age">User Age (Years)</label>
+        <input id="age" type="number" />
+        <button type="submit">Add New User</button>
+      </form>
+    </Card>
   )
 }
 
