@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Card from "../UI/Card";
 import classes from "./NewUserInput.module.css";
 import Button from "../UI/Button";
-import { unstable_renderSubtreeIntoContainer } from 'react-dom';
+
 
 
 const NewUserInput = (props) => {
@@ -13,12 +13,14 @@ const [enteredUserAge, setEnteredUserAge] = useState('');
 const formHandler = event => {
   event.preventDefault();
   if (enteredUserName.trim().length === 0 || enteredUserAge.trim().length === 0) {
+    console.log('hoping')
     return; 
   }
   if (+enteredUserAge < 1) {
+    console.log('hoping')
     return;
   }
-  console.log(enteredUserAge,enteredUserName)
+  props.onAddUser(enteredUserName,enteredUserAge)
   setEnteredUserName("");
   setEnteredUserAge("");
   
