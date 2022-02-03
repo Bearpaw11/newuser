@@ -3,8 +3,6 @@ import Card from "../UI/Card";
 import classes from "./NewUserInput.module.css";
 import Button from "../UI/Button";
 import ErrorModal from "../UI/ErrorModal"
-import Wrapper from "../Helpers/Wrapper"
-import { Fragment } from "react/cjs/react.production.min";
 
 
 const NewUserInput = (props) => {
