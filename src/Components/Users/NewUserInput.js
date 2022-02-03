@@ -3,7 +3,7 @@ import Card from "../UI/Card";
 import classes from "./NewUserInput.module.css";
 import Button from "../UI/Button";
 import ErrorModal from "../UI/ErrorModal"
-import Helper from "../Helpers/Wrapper"
+import Wrapper from "../Helpers/Wrapper"
 
 
 const NewUserInput = (props) => {
