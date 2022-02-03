@@ -4,6 +4,7 @@ import classes from "./NewUserInput.module.css";
 import Button from "../UI/Button";
 import ErrorModal from "../UI/ErrorModal"
 import Wrapper from "../Helpers/Wrapper"
+import { Fragment } from "react/cjs/react.production.min";
 
 
 const NewUserInput = (props) => {
@@ -48,7 +49,7 @@ const errorHandler = () => {
 };
 
   return (
-    <Wrapper>
+    <React.Fragment>
       {error && <ErrorModal title={error.title} message={error.message} clearError={errorHandler} />}
       <Card className={classes.input}>
         <form onSubmit={formHandler}>
@@ -59,7 +60,7 @@ const errorHandler = () => {
           <Button type="submit">Add User</Button>
         </form>
       </Card>
-    </Wrapper>
+    </React.Fragment>
   )
 }
 
